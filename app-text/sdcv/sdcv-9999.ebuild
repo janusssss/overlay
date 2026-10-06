@@ -26,6 +26,7 @@ BDEPEND="
 	nls? ( >=sys-devel/gettext-0.14.1 )
 	test? ( app-misc/jq )
 "
+KEYWORDS="~amd64"
 
 src_prepare() {
 	if use darkterm; then
