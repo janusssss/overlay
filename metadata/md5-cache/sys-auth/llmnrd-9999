@@ -1,0 +1,11 @@
+DEFINED_PHASES=install setup
+DESCRIPTION=LLMNR (RFC 4795) responder daemon for Linux
+EAPI=8
+HOMEPAGE=https://github.com/tklauser/llmnrd
+INHERIT=linux-info
+KEYWORDS=~amd64
+LICENSE=BSD
+SLOT=0
+SRC_URI=https://github.com/tklauser/llmnrd/archive/refs/tags/v9999.tar.gz -> llmnrd-9999.tar.gz
+_eclasses_=toolchain-funcs	58a918e3a42d0156f010dcfd43725be5	linux-info	efd923656513c879204fec6638eadee5
+_md5_=e07dd8688f4cd124e6089a3127c6c066

@@ -1,0 +1,21 @@
+#!/sbin/openrc-run
+
+name="llmnrd"
+description="LLMNR responder daemon"
+
+command="/usr/sbin/llmnrd"
+command_args="-d"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+
+output_log="/var/log/llmnrd.log"
+error_log="/var/log/llmnrd.log"
+
+depend() {
+    need net
+    after firewall
+}
+
+start_pre() {
+    checkpath -f -m 0644 /var/log/llmnrd.log
+}
